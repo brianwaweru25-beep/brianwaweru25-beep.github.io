@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | Jamii Hospital</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" crossorigin="anonymous">
+</head>
+<body>
+  <section class="header page-header">
+    <nav>
+      <a href="index.html"><img src="images/jamii-logo.png" alt="Jamii Hospital Logo"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="has-drop"><a href="about.html">About Us</a>
+            <ul class="dropdown">
+              <li><a href="about.html#who">Who we are</a></li>
+              <li><a href="about.html#vision">Vision &amp; Mission</a></li>
+              <li><a href="about.html#values">Our Core Values</a></li>
+              <li><a href="about.html#management">The Management</a></li>
+              <li><a href="about.html#clinics">Satellite Clinics</a></li>
+            </ul>
+          </li>
+          <li class="has-drop"><a href="services.html">Our Services</a>
+            <ul class="dropdown">
+              <li><a href="services.html">Explore All Services</a></li>
+              <li><a href="services.html#general">General Medical</a></li>
+              <li><a href="services.html#dental">Dental Care</a></li>
+              <li><a href="services.html#emergency">Emergency Services</a></li>
+              <li><a href="services.html#laboratory">Laboratory Services</a></li>
+              <li><a href="services.html#pharmacy">Pharmacy Services</a></li>
+              <li><a href="services.html#paediatrics">Paediatric Services</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html">Blogs &amp; News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
+    <div class="page-title">
+      <h1>Our Services</h1>
+      <p>Quality, compassionate care for you and your family.</p>
+    </div>
+  </section>
+
+  <section class="service-cards">
+    <h2>What We Offer</h2>
+    <p class="section-sub">We offer a wide range of services to meet the diverse needs of our patients.</p>
+    <div class="row">
+      <div class="services-col" id="general">
+        <img src="images/general.png" alt="General Medical Image">
+        <h3>General Medical Services</h3>
+        <p>Our hospital provides comprehensive medical services, including general medicine, specialized care, and preventive health programs.</p>
+      </div>
+      <div class="services-col" id="dental">
+        <img src="images/dental services.png" alt="Dental Image">
+        <h3>Dental Care</h3>
+        <p>Our team of experienced dentists provides comprehensive dental care, including routine checkups, cleanings, and specialized treatments.</p>
+      </div>
+      <div class="services-col" id="emergency">
+        <img src="images/emergency.png" alt="Emergency Image">
+        <h3>Emergency Services</h3>
+        <p>We have a dedicated emergency department that is equipped to handle medical emergencies promptly and efficiently.</p>
+      </div>
+      <div class="services-col" id="laboratory">
+        <img src="images/laboratory.png" alt="Laboratory Image">
+        <h3>Laboratory Services</h3>
+        <p>Our hospital offers a wide range of laboratory services, including diagnostic tests, blood work, and pathology services.</p>
+      </div>
+      <div class="services-col" id="pharmacy">
+        <img src="images/pharmacy.png" alt="Pharmacy Image">
+        <h3>Pharmacy Services</h3>
+        <p>We have an in-house pharmacy that provides a wide range of prescription medications and over-the-counter products.</p>
+      </div>
+      <div class="services-col" id="paediatrics">
+        <img src="images/paedriatrics image.png" alt="Paediatrics Image">
+        <h3>Paediatrics</h3>
+        <p>Our hospital offers specialized pediatric care, including routine checkups, vaccinations, and treatment for common childhood illnesses.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/jamii-logo.png" alt="Jamii Hospital Logo">
+        <p>Quality, compassionate healthcare for the Karatina community.</p>
+      </div>
+      <div class="footer-col">
+        <h4>NAVIGATION</h4>
+        <a href="about.html#who">Who we are</a>
+        <a href="about.html#vision">Our Mission</a>
+        <a href="services.html">Our Services</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="blog.html">Blogs &amp; News</a>
+      </div>
+      <div class="footer-col">
+        <h4>OUR SERVICES</h4>
+        <a href="services.html#paediatrics">Paediatric Services</a>
+        <a href="services.html#dental">Dental Care Services</a>
+        <a href="services.html#laboratory">Laboratory Services</a>
+        <a href="services.html#pharmacy">Pharmacy Services</a>
+        <a href="services.html">Explore All Services</a>
+      </div>
+      <div class="footer-col">
+        <h4>QUICK LINKS</h4>
+        <a href="contact.html">Contact us</a>
+        <a href="tel:+254700000000">Our Helpline</a> <!-- EDIT: put your real number -->
+        <a href="contact.html">Careers</a>
+        <a href="contact.html">Feedback</a>
+        <a href="contact.html">Partnerships</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div><a href="#">PRIVACY POLICY</a> <span class="whats-new"><i class="fa-solid fa-bell"></i> WHAT'S NEW</span></div>
+      <span>COPYRIGHT &copy; 2026 JAMII HOSPITAL</span>
+    </div>
+  </footer>
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function openMenu(){ navLinks.style.right = "0"; }
+    function closeMenu(){ navLinks.style.right = "-200px"; }
+    document.querySelectorAll(".has-drop > a").forEach(function(a){
+      a.addEventListener("click", function(e){
+        if(window.innerWidth <= 700){ e.preventDefault(); this.parentElement.classList.toggle("open"); }
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
