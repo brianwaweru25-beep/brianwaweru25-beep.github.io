@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jamii Hospital | Karatina</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" crossorigin="anonymous">
+</head>
+<body>
+  <!----- HERO ----->
+  <section class="header" id="home">
+    <div class="hero-slides">
+      <div class="slide"></div>
+      <div class="slide"></div>
+      <div class="slide"></div>
+      <div class="slide"></div>
+    </div>
+    <nav>
+      <a href="index.html"><img src="images/jamii-logo.png" alt="Jamii Hospital Logo"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="has-drop"><a href="about.html">About Us</a>
+            <ul class="dropdown">
+              <li><a href="about.html#who">Who we are</a></li>
+              <li><a href="about.html#vision">Vision &amp; Mission</a></li>
+              <li><a href="about.html#values">Our Core Values</a></li>
+              <li><a href="about.html#management">The Management</a></li>
+              <li><a href="about.html#clinics">Satellite Clinics</a></li>
+            </ul>
+          </li>
+          <li class="has-drop"><a href="services.html">Our Services</a>
+            <ul class="dropdown">
+              <li><a href="services.html">Explore All Services</a></li>
+              <li><a href="services.html#general">General Medical</a></li>
+              <li><a href="services.html#dental">Dental Care</a></li>
+              <li><a href="services.html#emergency">Emergency Services</a></li>
+              <li><a href="services.html#laboratory">Laboratory Services</a></li>
+              <li><a href="services.html#pharmacy">Pharmacy Services</a></li>
+              <li><a href="services.html#paediatrics">Paediatric Services</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html">Blogs &amp; News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+      <h2>Jamii Hospital</h2>
+      <h1>Kenya's Best Healthcare Facility</h1>
+      <p>Welcome to our hospital in Karatina. We are committed to expert, compassionate and ethical care for all our patients.</p>
+      <a href="#services" class="hero-btn red">Our Services <i class="fa-solid fa-circle-chevron-right"></i></a>
+      <a href="#branches" class="hero-btn">Visit Us <i class="fa-solid fa-circle-chevron-right"></i></a>
+    </div>
+  </section>
+
+  <!----- ABOUT (brief history) ----->
+  <section class="about-brief" id="about">
+    <div class="about-img">
+      <img src="images/branches.png" alt="Jamii Hospital Karatina">
+    </div>
+    <div class="about-text">
+      <h2>Jamii Hospital</h2>
+      <!-- EDIT: add your hospital's real history (year started, founders, milestones) -->
+      <p>Jamii Hospital is a healthcare institution in Karatina, Nyeri County, dedicated to providing quality, compassionate and affordable care to our community. We are located on Kuguru Road in the Mahiga / Sigoni area, next to PanAfric Girls High School.</p>
+      <p>Our qualified team of doctors, clinicians and nurses is devoted to delivering high-quality care. Whether through inpatient services, outpatient care, or specialized consultations, we provide timely and personalized medical attention to meet each patient's unique needs.</p>
+      <p>Our vision is to be the hospital of choice in the provision of quality health care for all.</p>
+      <a href="about.html" class="view-all">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!----- SERVICES (icon list) ----->
+  <section class="services" id="services">
+    <div class="container">
+      <h1>Our Services</h1>
+      <p class="section-sub">We offer a wide range of services to meet the diverse needs of our patients.</p>
+      <div class="service-grid">
+        <div class="service-item">
+          <div class="service-icon"><i class="fa-solid fa-stethoscope"></i></div>
+          <div><h3>General Medical Services</h3><p>Our hospital provides comprehensive medical services, including general medicine, specialized care, and preventive health programs.</p></div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon"><i class="fa-solid fa-tooth"></i></div>
+          <div><h3>Dental Care</h3><p>Our team of experienced dentists provides comprehensive dental care, including routine checkups, cleanings, and specialized treatments.</p></div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon"><i class="fa-solid fa-truck-medical"></i></div>
+          <div><h3>Emergency Services</h3><p>We have a dedicated emergency department that is equipped to handle medical emergencies promptly and efficiently.</p></div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon"><i class="fa-solid fa-microscope"></i></div>
+          <div><h3>Laboratory Services</h3><p>Our hospital offers a wide range of laboratory services, including diagnostic tests, blood work, and pathology services.</p></div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon"><i class="fa-solid fa-pills"></i></div>
+          <div><h3>Pharmacy Services</h3><p>We have an in-house pharmacy that provides a wide range of prescription medications and over-the-counter products.</p></div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon"><i class="fa-solid fa-baby"></i></div>
+          <div><h3>Paediatrics</h3><p>Our hospital offers specialized pediatric care, including routine checkups, vaccinations, and treatment for common childhood illnesses.</p></div>
+        </div>
+      </div>
+      <a href="services.html" class="view-all">View All Services <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!----- ANIMATED STATISTICS (EDIT the numbers) ----->
+  <section class="stats">
+    <div class="stats-box">
+      <div class="stat"><h3><span class="count" data-target="50" data-suffix="+">0</span></h3><p>Bed Capacity</p></div>
+      <div class="stat"><h3><span class="count" data-target="10" data-suffix="+">0</span></h3><p>Years of Service</p></div>
+      <div class="stat"><h3><span class="count" data-target="8" data-suffix="">0</span></h3><p>Departments</p></div>
+      <div class="stat"><h3><span class="count" data-target="40" data-suffix="+">0</span></h3><p>Professionals</p></div>
+    </div>
+  </section>
+
+  <!----- BRANCHES ----->
+  <section class="branches" id="branches">
+    <h1>Our Main Branches</h1>
+    <p>Jamii Hospital in Karatina is located on Kuguru Road in the Mahiga / Sigoni area, next to PanAfric Girls High School, Nyeri County, Kenya.</p>
+    <div class="branch-image">
+      <img src="images/branches.jpeg" alt="Jamii Hospital Karatina, Kuguru Road">
+    </div>
+  </section>
+
+  <!----- FACILITIES ----->
+  <section class="facilities" id="facilities">
+    <h1>Our Facilities</h1>
+    <p>We offer a wide range of facilities to ensure the comfort and well-being of our patients.<br>Explore our facilities below:</p>
+    <div class="row">
+      <div class="facilities-col">
+        <img src="images/ambulance.png" alt="Ambulance Image">
+        <h3>Ambulance Services</h3>
+        <p>We provide 24/7 ambulance services to ensure timely medical assistance and transportation for our patients.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="images/icu.png" alt="ICU Image">
+        <h3>Intensive Care Unit (ICU)</h3>
+        <p>Our hospital has a state-of-the-art ICU equipped with advanced monitoring systems and specialized care for critically ill patients.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="images/operation theatre.png" alt="Operation Theatre Image">
+        <h3>Operation Theatre</h3>
+        <p>Our hospital has state-of-the-art operation theatres that are equipped to handle a wide range of surgical procedures with precision and safety.</p>
+      </div>
+    </div>
+  </section>
+
+  <!----- HAVE A QUESTION ----->
+  <section class="cta">
+    <div class="cta-text">
+      <h2>Have a Question?</h2>
+      <!-- EDIT: put your real helpline number -->
+      <p>You can contact us via our 24 Hours Helpline <strong>+254 700 000 000</strong> or you can visit our branch for your healthcare needs today.</p>
+      <a href="contact.html" class="cta-btn"><i class="fa-solid fa-headset"></i> Contact us Now</a>
+    </div>
+    <div class="cta-img"></div>
+  </section>
+
+  <!----- PARTNERS (scrolling) ----->
+  <section class="partners">
+    <h2>Our Partners &amp; Insurance Providers</h2>
+    <div class="marquee">
+      <div class="marquee-track">
+        <!-- EDIT: replace each text with <img src="images/partner1.png" alt="Name"> -->
+        <div class="partner"><img src="images/partners/equity.png" alt="Partner 1"></div>
+        <div class="partner"><img src="images/partners/kenbright.png" alt="Partner 2"></div>
+        <div class="partner"><img src="images/partners/mtiba.jpeg" alt="Partner 3"></div>
+        <div class="partner"><img src="images/partners/sha.png" alt="Partner 4"></div>
+        <div class="partner"><img src="images/partners/cic.png" alt="Partner 5"></div>
+        <div class="partner"><img src="images/partners/britam.jpeg" alt="Partner 6"></div>
+        <div class="partner"><img src="images/partners/APA.png" alt="Partner 1"></div>
+        <div class="partner"><img src="images/partners/madison group.png" alt="Partner 2"></div>
+        <div class="partner"><img src="images/partners/jubilee.png" alt="Partner 3"></div>
+        
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/jamii-logo.png" alt="Jamii Hospital Logo">
+        <p>Quality, compassionate healthcare for the Karatina community.</p>
+      </div>
+      <div class="footer-col">
+        <h4>NAVIGATION</h4>
+        <a href="about.html#who">Who we are</a>
+        <a href="about.html#vision">Our Mission</a>
+        <a href="services.html">Our Services</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="blog.html">Blogs &amp; News</a>
+      </div>
+      <div class="footer-col">
+        <h4>OUR SERVICES</h4>
+        <a href="services.html#paediatrics">Paediatric Services</a>
+        <a href="services.html#dental">Dental Care Services</a>
+        <a href="services.html#laboratory">Laboratory Services</a>
+        <a href="services.html#pharmacy">Pharmacy Services</a>
+        <a href="services.html">Explore All Services</a>
+      </div>
+      <div class="footer-col">
+        <h4>QUICK LINKS</h4>
+        <a href="contact.html">Contact us</a>
+        <a href="tel:+254700000000">Our Helpline</a> <!-- EDIT: put your real number -->
+        <a href="contact.html">Careers</a>
+        <a href="contact.html">Feedback</a>
+        <a href="contact.html">Partnerships</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div><a href="#">PRIVACY POLICY</a> <span class="whats-new"><i class="fa-solid fa-bell"></i> WHAT'S NEW</span></div>
+      <span>COPYRIGHT &copy; 2026 JAMII HOSPITAL</span>
+    </div>
+  </footer>
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function openMenu(){ navLinks.style.right = "0"; }
+    function closeMenu(){ navLinks.style.right = "-200px"; }
+
+    /* phone: tap "About Us" / "Our Services" to open their sub-menu */
+    document.querySelectorAll(".has-drop > a").forEach(function(a){
+      a.addEventListener("click", function(e){
+        if(window.innerWidth <= 700){ e.preventDefault(); this.parentElement.classList.toggle("open"); }
+      });
+    });
+
+    /* animated counters: count up when scrolled into view */
+    var counters = document.querySelectorAll(".count");
+    function runCount(el){
+      var target = +el.dataset.target, suffix = el.dataset.suffix || "", start = performance.now();
+      (function step(now){
+        var p = Math.min((now - start) / 1800, 1);
+        el.textContent = Math.floor(target * p) + suffix;
+        if(p < 1) requestAnimationFrame(step);
+      })(start);
+    }
+    if(counters.length){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){ if(en.isIntersecting){ runCount(en.target); io.unobserve(en.target); } });
+      }, {threshold: 0.5});
+      counters.forEach(function(c){ io.observe(c); });
+    }
+  </script>
+</body>
+</html>
